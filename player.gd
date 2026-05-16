@@ -27,6 +27,6 @@ func _physics_process(delta: float) -> void:
 	print(velocity.y)
 
 func _input(event):
-	if event.is_action_released("Jump"):
+	if event.is_action_released("Jump") and velocity.y < 0:
 		if !is_on_floor():
 			velocity.y *= 0.5
