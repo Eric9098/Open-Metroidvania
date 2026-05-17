@@ -9,7 +9,6 @@ func _input(event: InputEvent) -> void:
 		
 		BubbleInstance.global_position = Vector2(player.global_position.x + 130, player.global_position.y)
 	
-		BubbleInstance.linear_velocity.x = 50
+		BubbleInstance.linear_velocity = Vector2(50 , -25)
 		
 		get_tree().root.add_child(BubbleInstance)
-		print(BubbleInstance.linear_velocity)
