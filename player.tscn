@@ -1,23 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://ct44dotuerbv6"]
+[gd_scene load_steps=5 format=3 uid="uid://ct44dotuerbv6"]
 
 [ext_resource type="Script" uid="uid://3164c22atk6r" path="res://Open-Metroidvania/player.gd" id="1_2o21k"]
-[ext_resource type="Texture2D" uid="uid://dg80pawmfomke" path="res://icon.svg" id="1_dorlx"]
+[ext_resource type="Texture2D" uid="uid://dg80pawmfomke" path="res://Open-Metroidvania/icon.svg" id="1_dorlx"]
+[ext_resource type="Script" uid="uid://bnsb7km1wkdtm" path="res://Open-Metroidvania/bubble_ability.gd" id="3_pd3ak"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2o21k"]
-size = Vector2(130, 129)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pd3ak"]
+size = Vector2(128, 128)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_2o21k")
 
-[node name="Hitbox" type="CollisionShape2D" parent="."]
-position = Vector2(2, 1.5)
-shape = SubResource("RectangleShape2D_2o21k")
+[node name="PlayerHitbox" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_pd3ak")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.5, 1)
+[node name="PlayerSprite" type="Sprite2D" parent="."]
 scale = Vector2(1.0234375, 1.015625)
 texture = ExtResource("1_dorlx")
 
 [node name="JumpBufferTimer" type="Timer" parent="."]
-wait_time = 0.08
+wait_time = 0.09
 one_shot = true
+
+[node name="Abilities" type="Node" parent="."]
+
+[node name="BubbleAbility" type="Node" parent="Abilities"]
+script = ExtResource("3_pd3ak")
