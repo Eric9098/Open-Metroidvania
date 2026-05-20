@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbmjyxwraw54u"
-path="res://.godot/imported/Bubble.png-9913e925dcfd781cb7c07e2d5e814155.ctex"
+path="res://.godot/imported/Bubble.png-a8ccebe9b35962f9344b8635cc061b87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Open-Metroidvania/Bubble.png"
-dest_files=["res://.godot/imported/Bubble.png-9913e925dcfd781cb7c07e2d5e814155.ctex"]
+source_file="res://Open-Metroidvania/Sprites/Abilities/Bubble.png"
+dest_files=["res://.godot/imported/Bubble.png-a8ccebe9b35962f9344b8635cc061b87.ctex"]
 
 [params]
 

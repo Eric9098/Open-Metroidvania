@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ct44dotuerbv6"]
+[gd_scene load_steps=5 format=3 uid="uid://dabcknd82logc"]
 
-[ext_resource type="Script" uid="uid://3164c22atk6r" path="res://Open-Metroidvania/player.gd" id="1_2o21k"]
-[ext_resource type="Texture2D" uid="uid://dg80pawmfomke" path="res://Open-Metroidvania/icon.svg" id="1_dorlx"]
-[ext_resource type="Script" uid="uid://bnsb7km1wkdtm" path="res://Open-Metroidvania/bubble_ability.gd" id="3_pd3ak"]
+[ext_resource type="Script" path="res://Open-Metroidvania/Scripts/Player/player.gd" id="1_2o21k"]
+[ext_resource type="Texture2D" uid="uid://dg80pawmfomke" path="res://Open-Metroidvania/Sprites/Characters/icon.svg" id="1_dorlx"]
+[ext_resource type="Script" uid="uid://bnsb7km1wkdtm" path="res://Open-Metroidvania/Scripts/Player/Abilities/bubble_ability.gd" id="3_pd3ak"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pd3ak"]
 size = Vector2(128, 128)

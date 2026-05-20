@@ -5,6 +5,7 @@ const JUMP_VELOCITY = -900.0
 const ACCELERATION = 45
 const JUMP_CUT = 0.5
 
+
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("Jump"):
 		$JumpBufferTimer.start()

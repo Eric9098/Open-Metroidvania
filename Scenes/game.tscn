@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhvtkwg1rfdi0"]
+
+[ext_resource type="PackedScene" uid="uid://dabcknd82logc" path="res://Open-Metroidvania/Scenes/player.tscn" id="1_tqxn4"]
+[ext_resource type="Texture2D" uid="uid://dg80pawmfomke" path="res://Open-Metroidvania/Sprites/Characters/icon.svg" id="2_allbo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nauv1"]
+size = Vector2(640, 64)
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_tqxn4")]
+position = Vector2(368, 296)
+
+[node name="Platform" type="StaticBody2D" parent="."]
+position = Vector2(360, 464)
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+shape = SubResource("RectangleShape2D_nauv1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform"]
+scale = Vector2(4.9687967, -0.40186605)
+texture = ExtResource("2_allbo")
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+position = Vector2(352, 32)
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+shape = SubResource("RectangleShape2D_nauv1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform2"]
+scale = Vector2(4.9687967, -0.40186605)
+texture = ExtResource("2_allbo")

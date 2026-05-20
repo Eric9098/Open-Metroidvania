@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://fqpp3n1ixago"]
 
-[ext_resource type="Texture2D" uid="uid://bbmjyxwraw54u" path="res://Open-Metroidvania/Bubble.png" id="1_xonfp"]
+[ext_resource type="Texture2D" uid="uid://bbmjyxwraw54u" path="res://Open-Metroidvania/Sprites/Abilities/Bubble.png" id="1_ohsuw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nauv1"]
 radius = 80.399
@@ -16,7 +16,7 @@ linear_damp = 0.1
 [node name="BubbleSprite" type="Sprite2D" parent="."]
 position = Vector2(3.0517578e-05, 3.0517578e-05)
 scale = Vector2(9.749999, 9.75)
-texture = ExtResource("1_xonfp")
+texture = ExtResource("1_ohsuw")
 
 [node name="BubbleHitbox" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_nauv1")
